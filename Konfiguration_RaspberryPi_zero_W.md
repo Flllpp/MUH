@@ -21,7 +21,7 @@
 
 #2.4 SD Karte im Pi verbauen und über den Router die IP des Pi's herausfinden
 
-#2.5 SSH Verbindung zum Pi aufnehmen Passwort für den Benutzer "pi" ist "raspberry" 
+#2.5 SSH Verbindung zum Pi aufnehmen: Das Standardpasswort für den Benutzer "pi" ist "raspberry" 
 
 ```
 ssh pi@"IP"
