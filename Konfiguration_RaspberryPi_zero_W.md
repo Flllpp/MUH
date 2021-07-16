@@ -1,6 +1,6 @@
 #1.0 Die Pinleiste muss beim Pi W (nicht beim Pi WH) aufgelötet werden. (https://www.etechnophiles.com/raspberry-pi-zero-gpio-pinout-specifications-programming-language/)
 
-##2.0 Einrichtung einer headless Konfiguration des Pi's (Steuerung über einen anderen Rechner) auf Win10 mit aktivierter bash. orientiert sich an: https://desertbot.io/blog/headless-pi-zero-w-wifi-setup-windows
+#2.0 Einrichtung einer headless Konfiguration des Pi's (Steuerung über einen anderen Rechner) auf Win10 mit aktivierter bash. orientiert sich an: https://desertbot.io/blog/headless-pi-zero-w-wifi-setup-windows
 
 #2.1 Über den "Raspberry Pi Imager" auf der microSD Karte "Raspberry Pi OS Lite" installieren. https://www.raspberrypi.org/software/operating-systems/
 
