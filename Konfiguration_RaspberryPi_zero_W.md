@@ -6,9 +6,10 @@
 
 #2.2 Über den Editior im Laufwerk "boot" die Datei "ssh" (wichtig: ohne Dateiendung) und "wpa_supplicant.conf" erstellen.
 
-#2.3 "wpa_supplicant.conf" editieren und für country DE setzen außerdem den Wifi-Namen und das Passwort eintragen. 
+#2.3 "wpa_supplicant.conf" editieren und den Wifi-Namen und das Passwort eintragen. 
 
-  country=US
+```
+  country=DE
   ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
   update_config=1
 
@@ -16,6 +17,8 @@
       ssid="NETWORK-NAME"
       psk="NETWORK-PASSWORD"
   }
+```
+
 #2.4 SD Karte im Pi verbauen und über den Router die IP des Pi's herausfinden
 
 #2.5 SSH Verbindung zum Pi aufnehmen Passwort für den Benutzer "pi" ist "raspberry" 
