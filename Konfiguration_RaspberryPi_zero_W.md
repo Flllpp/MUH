@@ -23,15 +23,20 @@
 
 #2.5 SSH Verbindung zum Pi aufnehmen Passwort für den Benutzer "pi" ist "raspberry" 
 
+```
 ssh pi@"IP"
+```
 
 #3.0 Passwort des Users pi ändern
 
+```
 passwd
+```
 
 #4.0 Pakete updaten
 
+```
 sudo apt-get update
 sudo apt-get upgrade
-
--Ende-
+```
+-Der Pi ist nun für den headless Betrieb konfiguriert-
