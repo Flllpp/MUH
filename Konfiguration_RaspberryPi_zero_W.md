@@ -35,4 +35,10 @@ passwd
 sudo apt-get update
 sudo apt-get upgrade
 ```
--Der Pi ist nun für den headless Betrieb konfiguriert-
+
+#5.0 Installation eines Editors (hier neovim)
+
+```
+sudo apt-get neovim
+```
+
