@@ -1,5 +1,8 @@
 #Anleitung nach https://www.raspberrypi-spy.co.uk/2016/07/using-bme280-i2c-temperature-pressure-sensor-in-python/ </br >
-#Datasheet BME280 https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf </br >
+#Datasheet BME280 https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf
+
+#0.0 Pinleiste auflöten und nach dem folgenden Schema mit dem Raspberry Pi zwero W verbinden: https://cdn-learn.adafruit.com/downloads/pdf/adafruit-bme280-humidity-barometric-pressure-temperature-sensor-breakout.pdf
+
 #1.0 Das Beispielskript (siehe https://www.raspberrypi-spy.co.uk/2016/07/using-bme280-i2c-temperature-pressure-sensor-in-python/ ) läuft auf python2 deshalb muss noch Software nachinstalliert werden
 
 ```
@@ -24,4 +27,21 @@ i2cdetect -y 1
 wget -O bme280.py http://bit.ly/bme280py
 ````
 
-#4.0 Anpassung des python scriptes, im Skript muss die I2C-Adresse angepasst werden, 0x76 muss durch 0x77 ersetzt werden
+#4.0 Anpassung des python scriptes, im Skript muss die I2C-Adresse in Zeile angepasst werden, 0x76 muss durch 0x77 ersetzt werden
+
+```
+sudo apt-get install neovim
+```
+
+```
+vim bme280.py
+```
+
+#5.0 Ausführen von bme280.py mit python2
+
+```
+python bme280.py
+```
+
+--ENDE--
+
