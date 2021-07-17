@@ -32,13 +32,13 @@ passwd
 #4.0 Pakete updaten
 
 ```
-sudo apt-get install update
+sudo apt-get update
 sudo apt-get upgrade
 ```
 
 #5.0 Installation eines Editors (hier neovim)
 
 ```
-sudo apt-get neovim
+sudo apt-get install neovim
 ```
 
