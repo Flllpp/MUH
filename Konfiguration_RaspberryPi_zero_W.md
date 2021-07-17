@@ -32,7 +32,7 @@ passwd
 #4.0 Pakete updaten
 
 ```
-sudo apt-get update
+sudo apt-get install update
 sudo apt-get upgrade
 ```
 
