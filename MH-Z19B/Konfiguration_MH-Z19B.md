@@ -1,4 +1,4 @@
-# Konfiguration MH-Z19B ====
+# Konfiguration MH-Z19B
 https://www.raspberrypi.org/documentation/configuration/uart.md
 1. ```raspi-config``` starten
 2. ```Interface Options``` auswählen
