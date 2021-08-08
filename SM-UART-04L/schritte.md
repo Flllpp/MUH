@@ -11,8 +11,8 @@ feinstaubsensor läuft mit uart auf 3,3V. das passt mit dem pi, 5V wär gefährl
   - mini-uart ist an prozessorspeed gekoppelt
   - PL011 UART ist unabhängig, kümmert sich aber ums bluetooth
     - --> bluetooth ist uns egal, PL011 ist energiesparender und weniger nervenaufreibend
-
-nun: 
-- [x] löten von pi und connector
-- [ ] einrichten von uart via rasp-config (wie wechsel von mini?)
-
+  - https://www.programmersought.com/article/93804026224/
+ 
+- löten von pi und connector
+- python script für serial read (serial_read.py)
+  - wie decode ich den readout?
