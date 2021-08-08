@@ -1,4 +1,4 @@
-# Konfiguration/Prokoll Feinstaubsensor
+# Konfiguration/Prokoll Feinstaubsensor SM-UART-04L
 
 - Raspbian geflashed
 - ssh per usb
