@@ -12,6 +12,13 @@ ser = serial.Serial(
         )
 
 while 1:
-    print(datetime.now().strftime("%d-%b-%Y (%H:%M:%S.%f)") + " next read:")
     x=ser.read(32)
-    print(x)
+    #print(x)
+    y=[int(x[i]) for i in range(4,16)]
+    #print(*y)
+    #print int.frombytes(y)
+    #for byte in y:
+    #    print(ord(byte))
+    #print("Relevant values: %3d %3d %3d %3d %3d %3d %3d %3d %3d %3d %3d %3d" % 1,2,2,2,2,2,2,2,2,2,2,2,2)
+    #print("Relevant values:", *y)
+    print(datetime.now().strftime("%d-%b-%Y %H:%M:%S.%f")[:-5], "  ", *y, flush=True)
