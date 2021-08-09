@@ -39,6 +39,8 @@ for line in data:
 ndata = np.array(ndata)
 if args.xkcd:
     plt.xkcd()
+else:
+    plt.rcParams["font.size"] = "16"
 
 plt.figure(figsize=(20,10))
 plt.plot(ndata[:,0],ndata[:,1], label="PM 1")
