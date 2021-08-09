@@ -6,12 +6,12 @@ Kommunikation via I2C oder SPI
 - was ist besser für uns?
   - da jeder sensor eigenen arduino bekommen soll ist I2C einfacher. SPI ist nur bei mehreren devices wirklich angenehmer
 
-Pins:
-**VIn**: 3,3V input
-**3VO**: kommen 3,3V raus
-**GND**: ground
-**SCK**: I2C clock, sda auf dem pi auf pin3 (**s**erial **da**ta)
-**SDI**: I2C data, scl auf dem pi auf pin5 (**s**erial **c**lock **l**ine)
+Pins:  
+**VIn**: 3,3V input  
+**3VO**: kommen 3,3V raus  
+**GND**: ground  
+**SCK**: I2C clock, sda auf dem pi auf pin3 (**s**erial **da**ta)  
+**SDI**: I2C data, scl auf dem pi auf pin5 (**s**erial **c**lock **l**ine)  
 **SD0** und **CS**: nur bei SPI benötigt
 
 
