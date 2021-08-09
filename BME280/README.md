@@ -23,4 +23,10 @@ Kommunikation via I2C oder SPI
 - python-library von [raspberry-pi-spy](https://www.raspberrypi-spy.co.uk/2016/07/using-bme280-i2c-temperature-pressure-sensor-in-python/) <3
 - Daten 🙌
 ```
-
+Chip ID     : 96
+Version     : 0
+Temperature :  24.59 C
+Pressure :  1003.41506951 hPa
+Humidity :  43.8059545331 %
+```
+Jetzt noch ein bisschen selbst coden und gut is.
