@@ -16,3 +16,6 @@ feinstaubsensor läuft mit uart auf 3,3V. das passt mit dem pi, 5V wär gefährl
 - löten von pi und connector
 - python script für serial read (serial_read.py)
   - wie decode ich den readout?
+  - bits 5-16 sind interessant. rest wegwerfen und nach int kovertieren
+- ergebnis plotten :)
+- was ist der unteschied zwischen werten 1-6 (standard smoke) und 7-12 (environment)?
