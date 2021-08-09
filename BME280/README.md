@@ -21,6 +21,7 @@ Kommunikation via I2C oder SPI
 - `raspi-config` benutzen um I2C zu aktivieren
 - installation von `python-smbus` und `i2c-tools`
 - python-library von [raspberry-pi-spy](https://www.raspberrypi-spy.co.uk/2016/07/using-bme280-i2c-temperature-pressure-sensor-in-python/) <3
+  - nur fix noch mit `2to3` nach python3 konvertiert 😬
 - Daten 🙌
 ```
 Chip ID     : 96
