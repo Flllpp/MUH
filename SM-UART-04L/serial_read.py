@@ -29,5 +29,9 @@ while 1:
     pm10e = y[10]*256 + y[11]
     #print(datetime.now().strftime("%d-%b-%Y %H:%M:%S.%f")[:-5], "  ", *y, flush=True)
     #print(datetime.now().strftime("%d-%b-%Y %H:%M:%S.%f")[:-5], "  ",  pm1, pm25, pm10, pm1e, pm25e, pm10, flush=True)
-    print(datetime.now().strftime("%d-%b-%Y,%H:%M:%S.%f")[:-5], f", %3d, %3d, %3d, %3d, %3d, %3d" % (pm1, pm25, pm10, pm1e, pm25e, pm10), sep="", flush=True)
+    print(datetime.now().strftime("%d-%b-%Y,%H:%M:%S.%f")[:-5],
+            f", %3d, %3d, %3d, %3d, %3d, %3d" % (pm1, pm25, pm10, pm1e, pm25e, pm10),
+            sep="",
+            flush=True
+            )
 
