@@ -59,6 +59,7 @@ def readSensor( bus ):
     chksumcheck = checkChecksum( data )
     if chksumcheck is not None:
         co2ppm = calcCO2ppmFrmData( data )
+        eprint( f"ppm(CO2) = {co2ppm} at {datetime.datetime.now()}", end="\r" )
         if co2ppm < CO2_MIN_PPM:
             eprint( f"WARNING: CO2 ppm {co2ppm} below minimum of {CO2_MIN_PPM}.\n"
                     f"         Recalibration recommended!" )
@@ -96,7 +97,7 @@ def logSensorData(
             ctime = datetime.datetime.now()
             wait_td = WAIT_TIME - (ctime - ltime)
             time.sleep(wait_td.total_seconds())
-            ltime = ctime
+            ltime = datetime.datetime.now()
 
 def main():
     try:
@@ -107,7 +108,7 @@ def main():
         eprint(f'ERROR {type(e).__name__}: {e}')
     except KeyboardInterrupt as e:
         sbus.close()
-        eprint(f'STOP: Keyboard interrupt, stopping log of port {port} to {logfn}\n')
+        eprint(f'STOP: Keyboard interrupt, stopping log of port {PORT_SERIAL0} to {logfn}\n')
 
 if __name__ == '__main__':
     main()
