@@ -3,6 +3,7 @@ from datetime import datetime
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 import numpy as np
+import argparse
 
 def makedate(zeit):
     return datetime.strptime(zeit.decode(), "%d-%b-%Y")
@@ -10,8 +11,14 @@ def makedate(zeit):
 def maketime(zeit):
     return datetime.strptime(zeit.decode(), "%H:%M:%S.%f").time()
 
+parser = argparse.ArgumentParser(description="Plot some smoke.")
+parser.add_argument("input", nargs=1, help="Input as csv")
+parser.add_argument("output", nargs=1, help="Output as png")
+parser.add_argument("--xkcd", action="store_true", help="Plot all wobbly")
+parser.add_argument("--minterval", metavar = "interval", type=int, default=1, help="Distance between x-ticks, default=1") 
+args = parser.parse_args()
 
-data = np.genfromtxt("out.txt",
+data = np.genfromtxt(args.input[0],
         delimiter = ",",
         dtype = None,
         converters = {0:makedate, 1:maketime}
@@ -30,8 +37,8 @@ for line in data:
         ])
 
 ndata = np.array(ndata)
-
-plt.xkcd()
+if args.xkcd:
+    plt.xkcd()
 
 plt.figure(figsize=(20,10))
 plt.plot(ndata[:,0],ndata[:,1], label="PM 1")
@@ -43,14 +50,14 @@ myFmt = mdates.DateFormatter('%H:%M')
 plt.gca().xaxis.set_major_formatter(myFmt)
 
 ax = plt.gca()
-ax.xaxis.set_major_locator(mdates.MinuteLocator(interval=1))
+ax.xaxis.set_major_locator(mdates.MinuteLocator(interval=args.minterval))
 
 plt.xlim([ndata[:,0].min(),ndata[:,0].max()])
 plt.ylabel("μg/m$^3$")
 
 plt.legend()
 
-plt.savefig("wow.png", bbox_inches="tight")
+plt.savefig(args.output[0], bbox_inches="tight")
 
 #print(data[0])
 #print(ndata[:10,0])
