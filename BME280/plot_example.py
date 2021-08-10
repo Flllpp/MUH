@@ -5,7 +5,7 @@ import matplotlib.dates as mdates
 import numpy as np
 import argparse
 
-# use sed "s/ °C//g; s/ mbar//g; s/ %//g"
+# use sed "s/ °C//g; s/ mbar//g; s/ %//g; s/ m//g"
 
 def makedate(zeit):
     return datetime.strptime(zeit.decode(), "%d-%b-%Y")
@@ -32,7 +32,8 @@ for line in data:
     ndata.append([mdates.date2num(datetime.combine(line[0],line[1])),
         line[2],
         line[3],
-        line[4]
+        line[4],
+        line[5]
         ])
 
 ndata = np.array(ndata)
@@ -45,24 +46,30 @@ plt.figure(figsize=(20,10))
 fig,ax = plt.subplots()
 twin1 = ax.twinx()
 twin2 = ax.twinx()
+twin3 = ax.twinx()
 
 twin2.spines.right.set_position(("axes", 1.25))
+twin3.spines.right.set_position(("axes", 1.45))
 
 c1, = ax.plot(ndata[:,0],ndata[:,1], "b-", label="Temperatur")
 c2, = twin1.plot(ndata[:,0],ndata[:,2], "r-", label="Druck")
 c3, = twin2.plot(ndata[:,0],ndata[:,3], "g-", label="Relative Luftfeuchte")
+c4, = twin3.plot(ndata[:,0],ndata[:,4], "k-", label="Höhe")
 
 ax.set_ylim(0, ndata[:,1].max()+10)
 twin1.set_ylim(1000,1010)
 twin2.set_ylim(0, 100)
+twin3.set_ylim(ndata[:,4].min()-5, ndata[:,4].max()+12)
 
 ax.set_ylabel("Temperatur [°C]")
 twin1.set_ylabel("Druck [mbar]")
 twin2.set_ylabel("Relative Luftfeuchte [%]")
+twin3.set_ylabel("Höhe über NN [m]")
 
 ax.yaxis.label.set_color(c1.get_color())
 twin1.yaxis.label.set_color(c2.get_color())
 twin2.yaxis.label.set_color(c3.get_color())
+twin3.yaxis.label.set_color(c4.get_color())
 
 plt.gcf().autofmt_xdate()
 myFmt = mdates.DateFormatter('%H:%M:%S')
