@@ -8,5 +8,5 @@
 |BME280|Temperatur, Luftdruck, Rel. Luftfeuchte|I2C / SPI|
 |MH-Z19B|CO2|UART / PWM / Analog|
 |SM-UART-04L|Feinstaub|UART|
-|ZE27-O3|Ozon|UART, I2C|
+|ZE27-O3|Ozon|I2C|
 |mehr?|||
