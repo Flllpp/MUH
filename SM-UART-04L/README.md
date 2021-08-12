@@ -1,5 +1,7 @@
 # Konfiguration/Prokoll Feinstaubsensor SM-UART-04L
 
+Supplier Doku: https://www.mouser.com/pdfDocs/SM-UART-04LApplicationNote.pdf
+
 - Raspbian geflashed
 - ssh per usb
 - ssh per wifi
