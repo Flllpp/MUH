@@ -3,8 +3,7 @@
 Verschiedene Versionen im Projekt, in Tims Falle ist es [diese](https://www.adafruit.com/product/2652), sonst wohl eher [diese](https://www.berrybase.de/sensoren-module/feuchtigkeit/gy-bme280-breakout-board-3in1-sensor-f-252-r-temperatur-luftfeuchtigkeit-und-luftdruck?c=92). Kram sollte aber übertragbar sein außer, dass zweiterer mit 5V **nicht** klar kommt. --> Direkt mit 3,3V arbeiten.
 
 Kommunikation via I2C oder SPI
-- was ist besser für uns?
-  - da jeder sensor eigenen arduino bekommen soll ist I2C einfacher. SPI ist nur bei mehreren devices wirklich angenehmer
+- I2C, zusammen mit Licht, Ozon und hoffentlich Feinstaub
 
 |    Pin| |
 |---|---|  
@@ -31,3 +30,13 @@ Pressure :  1003.41506951 hPa
 Humidity :  43.8059545331 %
 ```
 Jetzt noch ein bisschen selbst coden und gut is.
+
+### Arduino-Kram
+
+Library BME280: https://www.arduino.cc/reference/en/libraries/bme280/
+Library SD-Modul: https://funduino.de/nr-28-das-sd-karten-modul
+
+- SD-Karte fromatieren auf FAT16 oder FAT32
+-- Internet sagt, dass Karten >16 GB Probleme machen können. Habe nur 32 GB also mal sehen.
+
+
