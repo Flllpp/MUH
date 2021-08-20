@@ -33,7 +33,7 @@ Jetzt noch ein bisschen selbst coden und gut is.
 
 ### Arduino-Kram
 
-Library BME280: https://www.arduino.cc/reference/en/libraries/bme280/
+Library BME280: https://www.arduino.cc/reference/en/libraries/bme280/  
 Library SD-Modul: https://funduino.de/nr-28-das-sd-karten-modul
 
 - SD-Karte fromatieren auf FAT16 oder FAT32
