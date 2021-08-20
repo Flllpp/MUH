@@ -33,10 +33,14 @@ Jetzt noch ein bisschen selbst coden und gut is.
 
 ### Arduino-Kram
 
-Library BME280: https://www.arduino.cc/reference/en/libraries/bme280/  
-Library SD-Modul: https://funduino.de/nr-28-das-sd-karten-modul
+Library BME280: <**Adafruit_BME280.h**>, für Tims Sensor. Für Andere evtl andere
+Library SD-Modul: <**SD.h**>, Beispiel: https://funduino.de/nr-28-das-sd-karten-modul
 
 - SD-Karte fromatieren auf FAT16 oder FAT32
 -- Internet sagt, dass Karten >16 GB Probleme machen können. Habe nur 32 GB also mal sehen.
-
+-- Im Test funktioniert die 32er
+- Wichtig: Datei immer close()en oder flush()en, sonst wird erstmal nichts geschrieben
+- BME via Adafruit-Library, evtl für andere Version anpassen
+- auslesen, schreiben, fertig
+-- Gibt bisher keinen richtigen Timestamp. Deswegen erstmal nur Sekunden seit Start.
 
