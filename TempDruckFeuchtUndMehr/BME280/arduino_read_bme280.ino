@@ -5,7 +5,7 @@
 Adafruit_BME280 bme;
 
 File Log;
-int cs_pin = 8; // CS am SD-Modul
+int cs_pin = 7; // CS am SD-Modul
 
 void setup() {
   Serial.begin(9600);
