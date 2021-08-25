@@ -11,5 +11,5 @@
 |~~SM-UART-04L~~|Feinstaub|UART|Tim|Ja!|
 |SPS30|Feinstaub|I2C / UART|Fix, Tim||
 |ZE27-O3|Ozon|I2C|Steffen?||
-|?|Sound|?|Ali||
+|?|Sound|?|Ali, Fix||
 |mehr?|||||
