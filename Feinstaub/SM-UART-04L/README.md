@@ -1,7 +1,8 @@
-# Konfiguration/Prokoll Feinstaubsensor SM-UART-04L
+# SM-UART-04L (legacy)
+Supplier Doku: https://www.mouser.com/pdfDocs/SM-UART-04LApplicationNote.pdf  
+Nur per UART ansprechbar --> **wir nehmen den SPS30 weiter unten mit I2C**
 
-Supplier Doku: https://www.mouser.com/pdfDocs/SM-UART-04LApplicationNote.pdf
-
+## Pi-Stuff
 - Raspbian geflashed
 - ssh per usb
 - ssh per wifi
