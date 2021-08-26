@@ -1,0 +1,23 @@
+# Anleitung Konfiguration BH1750 Lichtsensor für Betrieb mit Raspberry Pi
+
+- Die Pinleiste muss zunächst aufgelötet werden.
+- Kabel entsprechend des Schemas verbinden:
+  - Pi 3V to sensor VCC
+  - Pi GND to sensor GND
+  - Pi SCL to sensor SCL
+  - Pi SDA to sensor SDA
+- python 3 installieren
+  - `sudo apt-get install python3-pip`
+- smd installieren
+  - `python3 -m pip install smbus`
+- I2C aktivieren (https://www.raspberrypi-spy.co.uk/2014/11/enabling-the-i2c-interface-on-the-raspberry-pi/)
+  - `sudo raspi-config`
+  - Im Menü: Interfacing Options -> I2C -> Yes 
+  - `sudo reboot now`
+- Transfer des python scripts auf den Pi
+  - in neuer Konsole mit dem Skript bh1750_hsclenan.py im aktuellen verzeichnis `scp ./bh1750_hsclenan.py pi@192.168.178.33:/home/pi/`
+- Steffens Skript ausführen, ein Blick ins Skript lohnt. Hier lassen sich alle Optionen des Sensors konfigurieren
+  - `python3 bh1750_hsclenan.py 0 #Option1`
+  - `python3 bh1750_hsclenan.py 1 #Option2`
+- Detaillierte Anleitung zum Sensor (auch mit Arduinoanleitung)  
+  - https://learn.adafruit.com/adafruit-bh1750-ambient-light-sensor/overview
