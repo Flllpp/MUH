@@ -21,6 +21,7 @@ Supplier Doku: https://www.berrybase.de/media/pdf/89/50/21/produkt_downloads-Dat
     - Counter wird beim Idlen genullt. Sollten wir ihn nicht dauerhaft anlassen müssen wir cleaning cycle einbauen! `sps30_start_manual_fan_cleaning()`
 - Sensorion hat eine Arduino-Library gebastelt! https://github.com/Sensirion/arduino-sps
 - **Library bringt eigene Version von Wire.h mit**, kann das mit anderer I2C-Hardware vielleicht doch zu Problemen führen?
+  - Test mit BME280 zeigt: es geht trotzdem ^-^ siehe `arduino_i2c_conflict_test.ino`
 - Test-example aus der sps-Library läuft schonmal einwandfrei, ist aber auf Dauermessung ausgelegt
 - Daten werden nach Start des Sensors in ein sps30_measurement struct geworfen und können von dort einfach ausgegeben werden, beinhaltet 10 floats
   - `mc_1p0`, `mc_2p5`, `mc_4p0`, `mc_10p0` für µg/m³

@@ -58,7 +58,7 @@ void loop() {
     Serial.print("NC 10.0: ");
     Serial.println(sps_out.nc_10p0);
   
-    Serial.print("Typical partical size: ");
+    Serial.print("Typical particle size: ");
     Serial.println(sps_out.typical_particle_size);
     delay(1000);
   }
