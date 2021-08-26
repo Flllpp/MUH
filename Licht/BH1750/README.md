@@ -5,8 +5,11 @@
   - Pi 3V to sensor VCC
   - Pi GND to sensor GND
   - Pi SCL to sensor SCL
-  - Pi SDA to sensor SDA
-- python 3 installieren
+  - Pi SDA to sensor SDA  
+
+mit dem Pi über ssh verbinden dann:  
+
+python 3 installieren
   - `sudo apt-get install python3-pip`
 - smd installieren
   - `python3 -m pip install smbus`
@@ -14,10 +17,16 @@
   - `sudo raspi-config`
   - Im Menü: Interfacing Options -> I2C -> Yes 
   - `sudo reboot now`
+
+
 - Transfer des python scripts auf den Pi
-  - in neuer Konsole mit dem Skript bh1750_hsclenan.py im aktuellen verzeichnis `scp ./bh1750_hsclenan.py pi@192.168.178.33:/home/pi/`
-- Steffens Skript ausführen, ein Blick ins Skript lohnt. Hier lassen sich alle Optionen des Sensors konfigurieren
-  - `python3 bh1750_hsclenan.py 0 #Option1`
-  - `python3 bh1750_hsclenan.py 1 #Option2`
+  - das python script BH1750_simple.py auf den PC downloaden
+  - in der bash des lokalen PCs in den Ordner navigieren in dem das Skript liegt und das skript transferieren 
+  - `scp ./BH1750_simple.py pi@IPADRESSE:/home/pi/`  
+
+
+- Wieder mit dem Pi verbinden und das Skript ausführen
+  - `python3 BH1750_simple.py 0 #Option1`
+  - `python3 BH1750_simple.py 1 #Option2`
 - Detaillierte Anleitung zum Sensor (auch mit Arduinoanleitung)  
   - https://learn.adafruit.com/adafruit-bh1750-ambient-light-sensor/overview
