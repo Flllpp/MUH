@@ -14,7 +14,7 @@ Die simplen Features sind über diverse Libraries abgreifbar, für die coole AI 
 Es kann dann supercoole Sachen, man muss es aber auf die Sache trainieren (Beispiel: Kaffeebohnen erschnüffeln)
 
 ## Für den Download der 2.0 Library von Bosch müssen Email, Name und Adresse hinterlegt sowie die [Lizenz](https://www.bosch-sensortec.com/media/boschsensortec/downloads/software/bme688_development_software/bosch-sensortec-clickthrough-license-bme688.pdf) akzeptiert werden...
-### Kompilierte Software darf nur weitergegeben werden wenn auch ein Device mitgegeben wird. Da wir modular bauen wollenist dieser Sensor dann eigentlich raus für uns, oder?
+### Kompilierte Software darf nur weitergegeben werden wenn auch ein Device mitgegeben wird. Da wir modular bauen wollen ist dieser Sensor dann eigentlich raus für uns, oder? --> Sensor erstmal auf Eis
 
 - Gedacht für den Pi, geht aber sicher auch am Arduino
 - **Logic level ist 3.3V!** Der MKR macht das aber ein Arduino Uno läuft auf 5V
