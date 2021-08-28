@@ -1,4 +1,4 @@
-# Anleitung Konfiguration BH1750 Lichtsensor für Betrieb mit Raspberry Pi
+# Konfiguration BH1750 Lichtsensor mit Raspberry Pi
 
 - Die Pinleiste muss zunächst aufgelötet werden.
 - Kabel entsprechend des Schemas verbinden:
@@ -30,3 +30,11 @@ python 3 installieren
   - `python3 BH1750_simple.py 1 #Option2`
 - Detaillierte Anleitung zum Sensor (auch mit Arduinoanleitung)  
   - https://learn.adafruit.com/adafruit-bh1750-ambient-light-sensor/overview
+
+# Konfiguration BH1750 Lichtsensor mit Arduino
+
+Anleitung: https://learn.adafruit.com/adafruit-bh1750-ambient-light-sensor/arduino
+
+- Libraries: `hp_BH1750` ist von Adafruit vorgeschlagen
+  - Man könnte sich auch mal `OneTime-BH1750` [anschauen](https://github.com/JVKran/OneTime-BH1750), die soll sehr lightweight sein und wenig strom verbrauchen
+    - Die funktioniert super! Nice!
