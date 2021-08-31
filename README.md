@@ -12,5 +12,5 @@
 |SPS30|Feinstaub|I2C / UART|Fix, Tim||Ja!|
 |ZE27-O3|Ozon|I2C|Steffen?|||
 |DFROBOT SEN0232|Sound|Analog|Filipp|nein|Ja!|
-|SparkFun Elektret-Mikrofon|Sound|Analog|Ali|||
+|SparkFun Elektret-Mikrofon|Sound|Analog?|Ali|||
 |mehr?||||||
