@@ -11,7 +11,12 @@ Auf Github Code von
 
 ### Arduino-Kram
 
+Test mit Adafruit library
+
+bme680async.ino und bme680test.ino funktionieren
+
 Library BME680: **Adafruit BME680 Library**
 benötigt **Adafruit Unified Sensor** library (auf github adafruit_sensor)
 
 
+s
